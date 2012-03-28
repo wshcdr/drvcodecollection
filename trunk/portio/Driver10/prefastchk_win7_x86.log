@@ -1,0 +1,73 @@
+-----------------------------------------------------------------------------
+Microsoft (R) PREfast Version 9.0.21022.100208.
+Copyright (C) Microsoft Corporation. All rights reserved.
+-----------------------------------------------------------------------------
+Contents of defect log: PREfast_defects_chk_win7_x86.xml
+-----------------------------------------------------------------------------
+g:\system\project\cpp\portio\driver10\driver10.cpp (1038): warning 28155: The function being assigned or passed should be a DRIVER_DISPATCH function:  Add the declaration 'DRIVER_DISPATCH DRIVER10_DispatchCreateClose;' before the current first declaration of DRIVER10_DispatchCreateClose.
+	FUNCTION: DriverEntry (916)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (1038): warning 28169: The dispatch function 'DRIVER10_DispatchCreateClose' does not have any __drv_dispatchType annotations:  This can be corrected by adding appropriate __drv_dispatchType annotations to the function. Unnecessary casts can cause this warning.
+	FUNCTION: DriverEntry (916)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (1039): warning 28155: The function being assigned or passed should be a DRIVER_DISPATCH function:  Add the declaration 'DRIVER_DISPATCH DRIVER10_DispatchDeviceControl;' before the current first declaration of DRIVER10_DispatchDeviceControl.
+	FUNCTION: DriverEntry (916)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (1039): warning 28169: The dispatch function 'DRIVER10_DispatchDeviceControl' does not have any __drv_dispatchType annotations:  This can be corrected by adding appropriate __drv_dispatchType annotations to the function. Unnecessary casts can cause this warning.
+	FUNCTION: DriverEntry (916)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (1040): warning 28155: The function being assigned or passed should be a DRIVER_UNLOAD function:  Add the declaration 'DRIVER_UNLOAD DRIVER10_DriverUnload;' before the current first declaration of DRIVER10_DriverUnload.
+	FUNCTION: DriverEntry (916)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (146): warning 28193: 'deviceContext->PortBase' holds a value that must be examined.
+	FUNCTION: PortIOEvtDevicePrepareHardware (87)
+	PATH: 109 110 111 112 113 115 117 122 124 124 126 127 129 130 132 141 145 149 151 153 124 124 187 
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (191): warning 28172: The function 'PortIOEvtDeviceReleaseHardware' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOEvtDeviceReleaseHardware (191)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (234): warning 28172: The function 'PortIODeviceCreate' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIODeviceCreate (234)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (272): warning 28155: The function being assigned or passed should be a EVT_WDF_DEVICE_PREPARE_HARDWARE function:  Add the declaration 'EVT_WDF_DEVICE_PREPARE_HARDWARE PortIOEvtDevicePrepareHardware;' before the current first declaration of PortIOEvtDevicePrepareHardware.
+	FUNCTION: PortIODeviceCreate (234)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (273): warning 28155: The function being assigned or passed should be a EVT_WDF_DEVICE_RELEASE_HARDWARE function:  Add the declaration 'EVT_WDF_DEVICE_RELEASE_HARDWARE PortIOEvtDeviceReleaseHardware;' before the current first declaration of PortIOEvtDeviceReleaseHardware.
+	FUNCTION: PortIODeviceCreate (234)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (365): warning 28172: The function 'PortIOIoctlReadPort' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOIoctlReadPort (365)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (526): warning 28172: The function 'PortIOIoctlWritePort' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOIoctlWritePort (526)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (684): warning 28172: The function 'PortIOEvtIoDeviceControl' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOEvtIoDeviceControl (684)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (738): warning 28172: The function 'PortIOQueueInitialize' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOQueueInitialize (738)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (757): warning 28155: The function being assigned or passed should be a EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL function:  Add the declaration 'EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL PortIOEvtIoDeviceControl;' before the current first declaration of PortIOEvtIoDeviceControl.
+	FUNCTION: PortIOQueueInitialize (738)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (87): warning 28172: The function 'PortIOEvtDevicePrepareHardware' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOEvtDevicePrepareHardware (87)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (886): warning 28175: The 'NextDevice' member of _DEVICE_OBJECT should not be accessed by a driver:  Access to this member may be permitted for certain classes of drivers. See the documentation for this warning for more information.
+	FUNCTION: DRIVER10_DriverUnload (873)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (892): warning 28172: The function 'PortIOEvtDeviceAdd' has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
+	FUNCTION: PortIOEvtDeviceAdd (892)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (916): warning 28101: The Drivers module has inferred that the current function is a DRIVER_INITIALIZE function:  This is informational only. No problem has been detected.
+	FUNCTION: DriverEntry (916)
+
+g:\system\project\cpp\portio\driver10\driver10.cpp (926): warning 28155: The function being assigned or passed should be a EVT_WDF_DRIVER_DEVICE_ADD function:  Add the declaration 'EVT_WDF_DRIVER_DEVICE_ADD PortIOEvtDeviceAdd;' before the current first declaration of PortIOEvtDeviceAdd.
+	FUNCTION: DriverEntry (916)
+
+-----------------------------------------------------------------------------
+20 of 20 Defects Listed
+Filter in effect: drivers_recommended
+-----------------------------------------------------------------------------
+You can change the filter and sort options from the user interface.
+Enter PREFAST VIEW to display the defect log user interface.
