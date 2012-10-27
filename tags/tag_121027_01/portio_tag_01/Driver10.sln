@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Driver10.W7", "Driver10\Driver10.W7.vcproj", "{7DBA7435-DCC6-4C06-881A-6435550AB0C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		W7 checked (PREfast)|Win32 = W7 checked (PREfast)|Win32
+		W7 checked|Win32 = W7 checked|Win32
+		W7 free|Win32 = W7 free|Win32
+		W7LH checked (PREfast)|Win32 = W7LH checked (PREfast)|Win32
+		W7LH checked|Win32 = W7LH checked|Win32
+		W7LH free|Win32 = W7LH free|Win32
+		W7NET checked (PREfast)|Win32 = W7NET checked (PREfast)|Win32
+		W7NET checked|Win32 = W7NET checked|Win32
+		W7NET free|Win32 = W7NET free|Win32
+		W7XP checked (PREfast)|Win32 = W7XP checked (PREfast)|Win32
+		W7XP checked|Win32 = W7XP checked|Win32
+		W7XP free|Win32 = W7XP free|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 checked (PREfast)|Win32.ActiveCfg = W7 checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 checked (PREfast)|Win32.Build.0 = W7 checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 checked (PREfast)|Win32.Deploy.0 = W7 checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 checked|Win32.ActiveCfg = W7 checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 checked|Win32.Build.0 = W7 checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 checked|Win32.Deploy.0 = W7 checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 free|Win32.ActiveCfg = W7 free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 free|Win32.Build.0 = W7 free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7 free|Win32.Deploy.0 = W7 free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH checked (PREfast)|Win32.ActiveCfg = W7LH checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH checked (PREfast)|Win32.Build.0 = W7LH checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH checked (PREfast)|Win32.Deploy.0 = W7LH checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH checked|Win32.ActiveCfg = W7LH checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH checked|Win32.Build.0 = W7LH checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH checked|Win32.Deploy.0 = W7LH checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH free|Win32.ActiveCfg = W7LH free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH free|Win32.Build.0 = W7LH free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7LH free|Win32.Deploy.0 = W7LH free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET checked (PREfast)|Win32.ActiveCfg = W7NET checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET checked (PREfast)|Win32.Build.0 = W7NET checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET checked (PREfast)|Win32.Deploy.0 = W7NET checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET checked|Win32.ActiveCfg = W7NET checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET checked|Win32.Build.0 = W7NET checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET checked|Win32.Deploy.0 = W7NET checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET free|Win32.ActiveCfg = W7NET free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET free|Win32.Build.0 = W7NET free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7NET free|Win32.Deploy.0 = W7NET free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP checked (PREfast)|Win32.ActiveCfg = W7XP checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP checked (PREfast)|Win32.Build.0 = W7XP checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP checked (PREfast)|Win32.Deploy.0 = W7XP checked (PREfast)|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP checked|Win32.ActiveCfg = W7XP checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP checked|Win32.Build.0 = W7XP checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP checked|Win32.Deploy.0 = W7XP checked|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP free|Win32.ActiveCfg = W7XP free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP free|Win32.Build.0 = W7XP free|Win32
+		{7DBA7435-DCC6-4C06-881A-6435550AB0C4}.W7XP free|Win32.Deploy.0 = W7XP free|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
