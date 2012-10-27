@@ -1,0 +1,133 @@
+;;;
+
+;;; HelloWorld
+
+;;;
+
+;;;
+
+;;; Copyright (c) 2008, bbs.pediy.com
+
+;;;
+
+ 
+
+[Version]
+
+signature       =  "$Chicago$"               
+
+;这个是必须的,也可以换成WIndows95 和nT,但是这个最好,它表示windows
+
+Class    =  NULL      ;属于什么类型，这里是没有
+
+ClassGuid   =  {00000000-0000-0000-0000-000000000000}  
+
+;该类型的类型id，这里全填0
+
+Provider   =  %PEDIY%                                      ;提供商的名称
+
+DriverVer       =  01/02/2008,1.0.0.1                  ;驱动的版本号
+
+ 
+
+[DestinationDirs]
+
+HelloWorld.DriverFiles      = 12     ;%windir%\system32\drivers
+
+;12代表%windir%\system32\drivers这个目录，意思就是将HelloWorld.DriverFiles中的内容拷贝到%windir%\system32\drivers中
+
+ 
+
+;;
+
+;; Default install sections
+
+;;
+
+ 
+
+[DefaultInstall]
+
+CopyFiles           = HelloWorld.DriverFiles
+
+;CopyFiles是内建命令,表示拷贝将等号右边的节里面的文件拷贝到目的地
+
+ 
+
+[DefaultInstall.Services]
+
+AddService          = %HelloWorldServiceName%,,HelloWorld.Service
+
+;AddService是内建命令,表示找右边来新建服务.
+
+;%HelloWorldServiceName%这个是服务的名称，加%表示在string section中，HelloWorld.Service代表下面的节点名称
+
+ 
+
+;;
+
+;; Default uninstall sections
+
+;;
+
+ 
+
+[DefaultUninstall]
+
+DelFiles   = HelloWorld.DriverFiles
+
+;DelFiles表示卸载时删除文件
+
+ 
+
+[DefaultUninstall.Services]
+
+DelService = HelloWorld,0x200    ; Flags note to stop service first
+
+;删除服务，在删除服务前，先停止服务
+
+;
+
+; Services Section
+
+;
+
+ [HelloWorld.Service]
+
+DisplayName      = %HelloWorldServiceName%      ;系统服务中显示的名称
+
+Description      = %HelloWorldServiceDesc%      ;系统服务中描述的名称
+
+ServiceBinary    = %12%\helloworld.sys  ;%windir%\system32\drivers\filespy.sys
+
+ServiceType      = 1      ;SERVICE_KERNEL_DRIVER
+
+StartType        = 3      ;SERVICE_DEMAND_START，手动启动
+
+ErrorControl     = 1      ;SERVICE_ERROR_NORMAL
+
+;
+
+; Copy Files
+
+;
+
+ [HelloWorld.DriverFiles]
+
+Driver10.sys
+
+;;
+
+;; String Section
+
+;;
+
+ [Strings]
+
+PEDIY          = "dyd"
+
+HelloWorldServiceDesc = "看雪论坛--HelloWorld.Inf 演示"
+
+HelloWorldServiceName = "HelloWorld"
+
+HelloWorldRegistry    = "system\currentcontrolset\services\HelloWorld"
