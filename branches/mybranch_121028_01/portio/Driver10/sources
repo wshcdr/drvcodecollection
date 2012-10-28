@@ -1,0 +1,18 @@
+# $Id$
+TARGETNAME=Driver10
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+
+# Create browse info
+#BROWSER_INFO=1
+#BROWSERFILE=<some path>
+
+# Additional defines for the C/C++ preprocessor
+C_DEFINES=$(C_DEFINES)
+
+SOURCES=Driver10.cpp \
+        drvversion.rc
+
+# To solve the link2001 error
+KMDF_VERSION_MAJOR=1
